@@ -33,6 +33,7 @@ services:
     image: mysql:5.7
     volumes:
       - /var/lib/mysql
+      - /opt/targets/samurai-dojo-docker/apps/Samurai-Dojo/scavenger/scavenger.sql:/docker-entrypoint-initdb.d/scavenger.sql
     environment:
       - MYSQL_ROOT_PASSWORD=samurai
       - MYSQL_DATABASE=samurai_dojo_scavenger
