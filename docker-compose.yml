@@ -11,6 +11,7 @@ services:
     links:
       - basicdb
 
+
   scavengerphp:
     build: apps
     ports:
@@ -21,6 +22,7 @@ services:
     links:
       - scavengerdb
 
+
   basicdb:
     image: mysql:5.7
     volumes:
@@ -28,6 +30,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=samurai
       - MYSQL_DATABASE=samurai_dojo_basic
+
 
   scavengerdb:
     image: mysql:5.7
