@@ -2,4 +2,4 @@ FROM php:5.6-apache
 
 RUN docker-php-ext-install mysql mysqli
 
-RUN apt-get install dnsutils
+RUN apt-get update && apt-get install dnsutils
