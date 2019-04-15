@@ -10,6 +10,9 @@ services:
       - ./apps/Samurai-Dojo/basic:/var/www/html
     links:
       - basicdb
+    extra_hosts:
+      - "dojo-basic:127.0.0.2"
+      - "dojo-basic.wtf:127.0.0.2"
 
 
   scavengerphp:
